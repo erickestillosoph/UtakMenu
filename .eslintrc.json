@@ -3,7 +3,12 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["react-app", "react-app/jest", "airbnb", "plugin:prettier/recommended"],
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "airbnb",
+    "plugin:prettier/recommended"
+  ],
   "parserOptions": {
     "ecmaFeatures": { "jsx": true },
     "ecmaVersion": "latest",
@@ -22,5 +27,11 @@
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "warn",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
-  }
+  },
+  "prettier/prettier": [
+    "error",
+    {
+      "endOfLine": "auto"
+    }
+  ]
 }
