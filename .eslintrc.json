@@ -16,6 +16,7 @@
   },
   "plugins": ["react", "prettier"],
   "rules": {
+    "import/prefer-default-export": "off",
     "quotes": [
       "error",
       "double",
@@ -27,11 +28,5 @@
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "warn",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
-  },
-  "prettier/prettier": [
-    "error"
-    // {
-    //   "endOfLine": "auto"
-    // }
-  ]
+  }
 }
