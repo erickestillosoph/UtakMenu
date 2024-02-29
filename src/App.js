@@ -1,25 +1,26 @@
-import logo from "./logo.svg";
 import "./App.css";
+// Component
+import styled from "styled-components";
+import { Head } from "./components/Head";
+// Asset image logo
+import logo from "./assets/images/logo.png";
+// Main layout of the contents
+import MainLayout from "./components/Layout/MainLayout";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Head logo={logo} />
+      <MainLayout />
+    </Container>
   );
 }
 
 export default App;
+
+const Container = styled.div`
+  max-width: 1400px;
+  max-height: 765px;
+  margin: 0 auto;
+  overflow: hidden;
+`;
